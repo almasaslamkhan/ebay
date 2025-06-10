@@ -8,6 +8,24 @@ A simple calculator application built with Spring Boot that provides RESTful API
 - Provides API versioning for backward compatibility
 - Provides exception handling that will help for easy debugging if any issue exists during in test or prod environment.
 
+## Which Object Oriented Principles are achieved and how?
+- Open to Extension and closed to Modification: This project uses Strategy design paatern. That says if a new calculator functionality is to be added then one needs to write a class that implents the stategy interface. Then this class needs to be mapped in the configuration file. No further code changes to existing code are need
+- Inversion Of Control: For achieving IOC, this project uses Spring Boot framework. All the objects (beans) and their lifecycle is managed by SpringBoot.
+- Design Patters Used:  Strategy Design Pattern-> For Different calculator operations.
+- 					    Builder Design Patter -> For generating the REST API response.
+-                       Singleton -> Internally every Spring Boot bean has singleton scope by default.
+
+## How is the chaining opeartion handled?
+- Chaining is achieved using the method perform in CalculatorService.
+- perform() method returns 'this' object. The object can again be called to perform next operation thus achieving chaining  
+
+## What type of testing is done?
+- Unit test cases are written.
+- The code coverage is 85%
+
+## How is Exception Handling done?
+- There is a provision to write custom exceptions and set the error code and message.
+ 
 ## Features
 
 - Perform basic arithmetic operations: addition, subtraction, multiplication, and division.
@@ -194,8 +212,8 @@ The application includes custom exception handling to provide meaningful error m
 
 ### Postman Request Example
 
-![Postman Request](Screnshots/POSTMAN_SCREENSHOT_CALCULATE.png)
-![Postman Request](Screnshots/POSTMAN_SCREENSHOT_CHAIN.png)
+![Postman Request](/calculator-main/Screenshots/POSTMAN_SCREENSHOT_CALCULATE.png)
+![Postman Request](/calculator-main/Screenshots/POSTMAN_SCREENSHOT_CHAIN.png)
 
 
 
