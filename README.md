@@ -212,7 +212,7 @@ The application includes custom exception handling to provide meaningful error m
 
 ### Postman Request Example
 
-![Postman Request](/calculator-main/Screenshots/POSTMAN_SCREENSHOT_CALCULATE.png)
+![Postman Request](https://raw.githubusercontent.com/almasaslamkhan/ebay/refs/heads/main/Screenshots/POSTMAN_SCREENSHOT_CALCULATE.png)
 ![Postman Request](/calculator-main/Screenshots/POSTMAN_SCREENSHOT_CHAIN.png)
 
 
